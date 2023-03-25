@@ -1,0 +1,16 @@
+body {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(64, 64, 251, 1) 43%, rgba(0, 212, 255, 1) 100%);
+}
+.nav-link,a:hover{
+    color: lightblue;
+    text-decoration: underline;
+}
+.navbar{
+    background-color: #fff;
+    border-radius: 5px;
+    justify-content: flex-start;
+}
+a{
+    text-decoration: none;
+}
