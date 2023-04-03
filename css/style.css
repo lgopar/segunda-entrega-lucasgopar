@@ -2,15 +2,6 @@ body {
     background: rgb(2, 0, 36);
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(64, 64, 251, 1) 43%, rgba(0, 212, 255, 1) 100%);
 }
-<<<<<<< HEAD
- 
-.navbar,header{
-    background-color: #fff;
-    border-radius: 5px;
-}
-.icon{height: 200%
-    
-=======
 /* Pruebas del Navbar*/
  
  a:hover{
@@ -89,5 +80,4 @@ background: #ffaf71;
 border: #005f88; 
 color: #005f88;
 border-radius: 5px;
->>>>>>> lucas
 }
