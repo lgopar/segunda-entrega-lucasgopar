@@ -1,15 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     background: rgb(2, 0, 36);
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(64, 64, 251, 1) 43%, rgba(0, 212, 255, 1) 100%);
+    background: linear-gradient(90deg, rgba(64, 64, 251, 1) 43%, rgba(0, 212, 255, 1) 100%);
 }
 /* Pruebas del Navbar*/
  
  a:hover{
-    color: lightblue;
-    text-decoration: underline;
+    color: rgb(27, 37, 40);
+    text-decoration: none;
 }
 a:active{
-    color:#005f88;
+    color:#006f9f;
 }  
 .logo{
     height: 4rem;
@@ -22,19 +27,21 @@ a:active{
     text-align: center;
     font-style: italic;
     color: lightblue;
+    margin-top: 5rem;
 
 }
 
-/*CARRUSEL*/
+
 .carousel-inner{
     border-radius: 5px;
     
 }
 iframe{
-    height: 100%;
+   margin-top: 5rem;
+
+
 }
-/*GALERIA*/
-#galeria img {
+ #galeria img {
     width:100%;
     height: 250px;
 }
@@ -45,26 +52,73 @@ iframe{
 #galeria img:hover {
     border: 5px solid whitesmoke;
 }
-/*FORM*/
 
+
+.animacion{
+    height: 200px;
+    width: 200px;
+    position: relative;
+    margin: auto;
+    top: 0;
+    bottom:0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 20px 35px rgba(0,0,0,0.3);
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: white;
+}
+.animacion:before{
+    content: "";
+    background-image: conic-gradient(
+        #04b0ee 20deg,
+        transparent 120deg
+    );
+    height: 150%;
+    width: 150%;
+    position: absolute;
+    left: -25%;
+    top: -25%;
+    animation: rotate 6s infinite linear;
+}
+@keyframes rotate{
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+.animacion:after{
+    content: "Anotate aca";
+    height: 94%;
+    width: 94%;
+    position: absolute;
+    background-color: #2517e5;
+    border-radius: 5px;
+    top: 3%;
+    left: 3%;
+    color: #04b0ee;
+    display: grid;
+    place-items: center;
+    font-size: 20px;
+    letter-spacing: 6px;
+}
 .formulario{
     width: 300px;
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(64, 64, 251, 1) 43%, rgba(0, 212, 255, 1) 100%);
+    background: white;
     padding: 30px;
-    margin:auto;
     margin-top: 100px;
     border-radius: 5px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    font-family:  Arial, Helvetica, sans-serif;
     color:#005f88;
     }
 .controles{
     width: 100%;
     padding:10px;
-    background-color: rgb(248, 196, 129);
+    background-color: whitesmoke;
     border-radius: 5px;
     margin-bottom: 16px;
     border: 1px solid #005f88;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     padding-left: 1px,
 }
@@ -76,8 +130,11 @@ iframe{
 }
 .boton{
 width: 100%;
-background: #ffaf71;
+background: whitesmoke;
 border: #005f88; 
 color: #005f88;
 border-radius: 5px;
+}
+footer{
+    margin-top: 5rem;
 }
